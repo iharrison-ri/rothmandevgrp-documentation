@@ -1,4 +1,4 @@
-# Provider Care Portal
+# Orthonavigator
 | Page | Request | Params | Table Refs | Action | Description
 | - | - | - | - | - | - |
 | /login | POST /api/login | username:string, password:string || on log in | returns AD record for user |
