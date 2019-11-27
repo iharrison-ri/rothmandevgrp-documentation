@@ -30,8 +30,8 @@
 | /nursenav/surgery/:surgeryId | GET /api/PostAcuteEvents | opts:object | PostAcuteEvents, ReadmissionFacility, PrimaryReason, SecondaryReasons, Reasons |||
 | /nursenav/surgery/:surgeryId | GET /api/HospitalVisits | opts:object | HospitalVisits, Admission, ReadmissionFacility, Reason, SecondaryReasons, Reasons |||
 | /nursenav/users | GET /api/Users | opts:object | Users, Facility |||
-| /nursenav/patients | GET /api/Patients | opts:object | Patients |||
-| /nursenav/export/hospital | GET /api/Hospitals | opts:object | Hospital |||
-| /nursenav/import/hospital | GET /api/HospitalImport | opts:object | HospitalImport |||
-| /nursenav/surgeons | GET /api/Surgeons | opts:object | Surgeons |||
-| /nursenav/hospitals | GET /api/Hospitals | opts:object | Hospitals |||
+| /nursenav/patients | GET /api/Patients | opts:object | Patients || returns all patient data |
+| /nursenav/export/hospital | GET /api/Hospitals | opts:object | Hospital || returns all hospital data |
+| /nursenav/import/hospital | GET /api/HospitalImport | opts:object | HospitalImport || returns all hospitalImport data for current user |
+| /nursenav/surgeons | GET /api/Surgeons | opts:object | Surgeons || returns all surgeon data |
+| /nursenav/hospitals | GET /api/Hospitals | opts:object | Hospitals || returns all hospital data |
