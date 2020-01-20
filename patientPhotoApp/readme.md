@@ -15,6 +15,7 @@
 ### Starting the app
 start the app with pm2 with the following commands
 ```
+Open the terminal as an administrator
 cd C:\apps\qa\patientphotoapp\rothman_UI\Sprint-2_latest
 pm2 start node_modules/react-scripts/scripts/start.js --name ppaUI
 
@@ -23,20 +24,26 @@ pm2 start bin/www --name ppaREST
 ```
 ### Deploying the app to qa
 ```
+Open the terminal as an administrator
+pm2 stop ppaUI
 cd C:\apps\qa\patientphotoapp\rothman_UI\Sprint-2_latest
 git pull origin qa
 pm2 start ppaUI
 
+pm2 stop ppaREST
 cd C:\apps\qa\patientphotoapp\restAPI_Dev
 git pull origin qa
 pm2 start ppaREST
 ```
 ### Deploying the app to master
 ```
+Open the terminal as an administrator
+pm2 stop ppaUI
 cd C:\apps\qa\patientphotoapp\rothman_UI\Sprint-2_latest
 git pull origin master
 pm2 start ppaUI
 
+pm2 stop ppaREST
 cd C:\apps\qa\patientphotoapp\restAPI_Dev
 git pull origin master
 pm2 start ppaREST
