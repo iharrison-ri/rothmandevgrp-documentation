@@ -12,3 +12,32 @@
 | / | POST /uploadImages ||| on upload image | adds image to /public/images
 | / | POST /patientUpload ||| on submit form | moves image from /public/images to public/#/images. Where # is the next increment in count of moved images
 
+### Starting the app
+start the app with pm2 with the following commands
+```
+cd C:\apps\qa\patientphotoapp\rothman_UI\Sprint-2_latest
+pm2 start node_modules/react-scripts/scripts/start.js --name ppaUI
+
+cd C:\apps\qa\patientphotoapp\restAPI_Dev
+pm2 start bin/www --name ppaREST
+```
+### Deploying the app to qa
+```
+cd C:\apps\qa\patientphotoapp\rothman_UI\Sprint-2_latest
+git pull origin qa
+pm2 start ppaUI
+
+cd C:\apps\qa\patientphotoapp\restAPI_Dev
+git pull origin qa
+pm2 start ppaREST
+```
+### Deploying the app to master
+```
+cd C:\apps\qa\patientphotoapp\rothman_UI\Sprint-2_latest
+git pull origin master
+pm2 start ppaUI
+
+cd C:\apps\qa\patientphotoapp\restAPI_Dev
+git pull origin master
+pm2 start ppaREST
+```
