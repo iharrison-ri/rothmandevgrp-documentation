@@ -39,12 +39,12 @@ pm2 start ppaREST
 ```
 Open the terminal as an administrator
 pm2 stop ppaUI
-cd C:\apps\qa\patientphotoapp\rothman_UI\Sprint-2_latest
+cd C:\apps\production\patientphotoapp\rothman_UI\Sprint-2_latest
 git pull origin master
 pm2 start ppaUI
 
 pm2 stop ppaREST
-cd C:\apps\qa\patientphotoapp\restAPI_Dev
+cd C:\apps\production\patientphotoapp\restAPI_Dev
 git pull origin master
 pm2 start ppaREST
 ```
