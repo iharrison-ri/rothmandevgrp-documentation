@@ -50,19 +50,20 @@
 10. Run this command next
 11. cd C:\apps\qa\orthonav\roth-nav-rest && pm2 start rothman-rest.js
 PM2 should now be running your app!!
-
+```
 For the master branch number 9 and 11 will change to the following
 cd C:\apps\production\orthonav\roth-nav-ui && npm run-script build:prod
 cd C:\apps\production\orthonav\roth-nav-rest && pm2 start rothman-rest.js
-
+```
 ### Deploying the app to qa
+```
 ```
 Open the terminal as an administrator
 Take note of the "idNumber" of the app after running "pm2 ls"
 pm2 stop "idNumber"
 cd C:\apps\qa\orthonav\roth-nav-ui && npm pull origin qa && npm run-script build:dev
 cd C:\apps\qa\orthonav\roth-nav-rest && npm pull origin qa && pm2 start "idNumber"
-
+```
 ```
 ### Deploying the app to production
 ```
