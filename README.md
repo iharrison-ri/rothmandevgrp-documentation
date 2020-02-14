@@ -14,7 +14,7 @@ When initially starting a process on the server, use the following steps:
 
 1. Open the terminal as an Administrator
 2. run `pm2 ls` to check that pm2 is available. If so, move on to number 7
-3. If you get an error that says something about not knowing a location in the `H` drive continues to step 4.
+3. If you get an error that says `no such file or directory, open 'H:\.pm2\module_conf.json'` drive continues to step 4.
 4. Open a folder and navigate to anywhere in the `H` drive
 5. Right-click the folder location and run `Git Bash Here`
 6. This will open a `Bash` terminal in that location. Try running `pm2 ls` again. This opens up a table in the terminal
