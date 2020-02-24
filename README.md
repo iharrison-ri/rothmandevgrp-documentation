@@ -23,9 +23,9 @@ When initially starting a process on the server, use the following steps:
 
 *PPA startup*
 
-1. Navigate to the react route folder
+1. Navigate to the react route folder `cd C:\apps\qa\patientphotoapp\rothman_UI\Sprint-2_latest`
 2. run `pm2 start node_modules/react-scripts/scripts/start.js --name <name>` 
-3. Navigate to the node root folder
+3. Navigate to the node root folder `cd C:\apps\qa\patientphotoapp\restAPI_Dev`
 4. run `pm2 start bin/www --name <name>`
 
 *OrthoNav startup*
