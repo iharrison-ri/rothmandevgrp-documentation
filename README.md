@@ -65,4 +65,4 @@ Then run the following code:
 
 Note: the only branch a new branch should stem from is the QA branch. Avoid making branches from other branches because this could cause errors and unforeseen side effects.
 
-If you have been working on a branch for a while and you want to pull in all of the changes from QA run: git pull origin QA while on your branch. Be careful with this because you only want to pull files that didn’t directly cross with the files you are working on. If you having no choice put to have
+If you have been working on a branch for a while and you want to pull in all of the changes from QA run: git pull origin QA while on your branch.
